@@ -1,8 +1,8 @@
-module com.example.slangproject {
+module slangproject {
     requires javafx.controls;
     requires javafx.fxml;
 
 
-    opens com.example.slangproject to javafx.fxml;
-    exports com.example.slangproject;
+    opens com.module.slangproject to javafx.fxml;
+    exports com.module.slangproject;
 }

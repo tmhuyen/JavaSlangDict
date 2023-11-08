@@ -1,4 +1,4 @@
-package com.example.slangproject;
+package com.module.slangproject;
 
 import javafx.scene.Parent;
 import javafx.scene.Scene;

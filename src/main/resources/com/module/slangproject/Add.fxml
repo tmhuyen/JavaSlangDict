@@ -7,8 +7,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.slangproject.Add">
+<AnchorPane prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.module.slangproject.Add">
    <children>
       <Label alignment="CENTER" layoutX="281.0" layoutY="499.0" text="HCMUS - Building Java Application - 21127202" textFill="#427d9d">
          <font>
@@ -20,21 +19,11 @@
             <Font name="System Bold" size="64.0" />
          </font>
       </Label>
-      <Label alignment="CENTER" layoutX="284.0" layoutY="107.0" text="Add a new slang word" textFill="#427d9d">
+      <Label alignment="CENTER" layoutX="293.0" layoutY="107.0" text="Add a new slang word" textFill="#427d9d">
          <font>
             <Font name="System Bold" size="36.0" />
          </font>
       </Label>
-      <TextField layoutX="118.0" layoutY="188.0" prefHeight="53.0" prefWidth="709.0" text="New slang word here">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </TextField>
-      <TextField alignment="TOP_LEFT" layoutX="118.0" layoutY="270.0" prefHeight="131.0" prefWidth="709.0" text="Definition of slang word">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </TextField>
       <Button layoutX="232.0" layoutY="428.0" mnemonicParsing="false" text="Back to Home">
          <font>
             <Font size="24.0" />
@@ -45,5 +34,7 @@
             <Font size="24.0" />
          </font>
       </Button>
+      <TextArea layoutX="118.0" layoutY="262.0" prefHeight="137.0" prefWidth="709.0" promptText="Definitions of the slang word" wrapText="true" />
+      <TextArea layoutX="118.0" layoutY="180.0" prefHeight="53.0" prefWidth="709.0" promptText="New slang word" wrapText="true" />
    </children>
 </AnchorPane>

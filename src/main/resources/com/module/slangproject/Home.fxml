@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.module.slangproject.Home">
+   <children>
+      <Label alignment="CENTER" layoutX="413.0" layoutY="93.0" text="Home Page" textFill="#427d9d">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="263.0" text="Slang Dictionary" textFill="#164863">
+         <font>
+            <Font name="System Bold" size="64.0" />
+         </font>
+      </Label>
+      <Button alignment="TOP_LEFT" layoutX="64.0" layoutY="318.0" mnemonicParsing="false" text="Add new slang word">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="64.0" layoutY="242.0" mnemonicParsing="false" text="Search definitions">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="735.0" layoutY="318.0" mnemonicParsing="false" text="View history">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="64.0" layoutY="165.0" mnemonicParsing="false" text="Search slang words">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button alignment="TOP_LEFT" layoutX="404.0" layoutY="165.0" mnemonicParsing="false" text="Edit a slang word">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button alignment="TOP_LEFT" layoutX="390.0" layoutY="242.0" mnemonicParsing="false" text="Delete a slang word">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button alignment="TOP_LEFT" layoutX="390.0" layoutY="318.0" mnemonicParsing="false" text="Update raw data list">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button alignment="TOP_LEFT" layoutX="381.0" layoutY="393.0" mnemonicParsing="false" text="Random a slang word">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="699.0" layoutY="242.0" mnemonicParsing="false" text="Definitions quiz">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="683.0" layoutY="165.0" mnemonicParsing="false" text="Slang words quiz">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="312.0" layoutY="479.0" text="HCMUS - Building Java Application - 21127202" textFill="#427d9d">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
