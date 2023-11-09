@@ -1,10 +1,13 @@
 package com.module.slangproject;
 
 import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.stage.Stage;
-
+import java.util.*;
 import java.io.IOException;
 
 public class Main extends Application {
@@ -15,10 +18,15 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Home.class.getResource("Home.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Home.class.getResource("Delete.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("HCMUS - 21127202 - Slang Dictionary");
         stage.setScene(scene);
         stage.show();
+        SlangWord sw = new SlangWord();
+        sw.loadSlangWordsFromFile("src/main/data/slang.txt");
+
+
     }
+
 }

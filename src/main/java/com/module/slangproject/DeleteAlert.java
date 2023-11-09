@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class DefQuiz {
+public class DeleteAlert {
     private Stage stage;
     private Scene scene;
     private Parent parent;
