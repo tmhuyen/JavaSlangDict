@@ -103,6 +103,14 @@ public class SlangWord {
         }
         return null;
     }
+    public String getDefinitionsAsString(String sw){
+        Set<String> set = this.slangWords.get(sw);
+        String res = "";
+        for (String elements: set){
+            res = res + elements +", ";
+        }
+        return res;
+    }
     public void printFirstTwenty() {
         int count = 0;
         for (Map.Entry<String, Set<String>> entry : this.slangWords.entrySet()) {

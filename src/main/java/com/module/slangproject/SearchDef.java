@@ -45,6 +45,9 @@ public class SearchDef {
             }
             else {
                 sw_textflow.getChildren().clear();
+                DataHistory dataHistory = DataHistory.getInstance();
+                dataHistory.addHistory(def);
+                dataHistory.writeToFile();
                 // Iterate over the set
                 for (String str : sw_set) {
                     // Create a new Text node for each string

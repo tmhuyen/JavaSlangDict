@@ -45,6 +45,9 @@ public class SearchSW {
             }
             else {
                 def_textflow.getChildren().clear();
+                DataHistory dataHistory = DataHistory.getInstance();
+                dataHistory.addHistory(sw);
+                dataHistory.writeToFile();
                 String def = "";
                 Set<String> def_set = slangWord.getDefinitions(sw);
                 for (String element:def_set) {

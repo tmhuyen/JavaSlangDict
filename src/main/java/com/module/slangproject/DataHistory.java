@@ -2,20 +2,25 @@ package com.module.slangproject;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Set;
 
 public class DataHistory {
-    private ArrayList<String> history;
+    private ArrayList<String> history = new ArrayList<>();
     private static DataHistory datahistory = null;
     public static DataHistory getInstance() {
         if(datahistory == null)
             datahistory = new DataHistory();
         return datahistory;
     }
-
-    public static void getDataFromFile(String filename) {
+    public static DataHistory empty(){
+        datahistory = new DataHistory();
+        return datahistory;
+    }
+    public static void getDataFromFile() {
+        String filename = "src/main/data/history.txt";
         ArrayList<String> lines = new ArrayList<>();
         try (BufferedReader br = new BufferedReader(new FileReader(filename))) {
             String line;
@@ -33,5 +38,17 @@ public class DataHistory {
     }
     public void addData(String sw) {
         this.history.add(sw);
+    }
+    public void addHistory(String s){
+        this.history.add(s);
+    }
+    public void writeToFile() {
+        try (FileWriter writer = new FileWriter("src/main/data/history.txt")) {
+            for (String str : this.history) {
+                writer.write(str + "\n");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
