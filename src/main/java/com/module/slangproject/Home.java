@@ -38,4 +38,18 @@ public class Home{
         stage.show();
     }
 
+    public void switchToSearchDef(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("SearchDef.fxml"));
+        stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+    public void switchToSearchSW(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("SearchSW.fxml"));
+        stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
 }

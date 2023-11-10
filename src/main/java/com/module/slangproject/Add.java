@@ -40,7 +40,7 @@ public class Add {
             String newslang = add_txtnewslang.getText();
             String newdef = add_txtdef.getText();
             SlangWord slangWord = SlangWord.getInstance();
-            System.out.println(slangWord.isWordExist(":)"));
+
         });
     }
 
