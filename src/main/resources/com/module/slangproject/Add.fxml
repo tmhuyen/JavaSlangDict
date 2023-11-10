@@ -29,12 +29,12 @@
             <Font size="24.0" />
          </font>
       </Button>
-      <Button layoutX="541.0" layoutY="428.0" mnemonicParsing="false" text="Add new word">
+      <Button fx:id="add_addbtn" layoutX="541.0" layoutY="428.0" mnemonicParsing="false" onAction="#readata" text="Add new word">
          <font>
             <Font size="24.0" />
          </font>
       </Button>
-      <TextArea layoutX="118.0" layoutY="262.0" prefHeight="137.0" prefWidth="709.0" promptText="Definitions of the slang word" wrapText="true" />
-      <TextArea layoutX="118.0" layoutY="180.0" prefHeight="53.0" prefWidth="709.0" promptText="New slang word" wrapText="true" />
+      <TextArea fx:id="add_txtdef" layoutX="118.0" layoutY="262.0" prefHeight="137.0" prefWidth="709.0" promptText="Definitions of the slang word" wrapText="true" />
+      <TextArea fx:id="add_txtnewslang" layoutX="118.0" layoutY="180.0" prefHeight="53.0" prefWidth="709.0" promptText="New slang word" wrapText="true" />
    </children>
 </AnchorPane>

@@ -6,9 +6,16 @@ import java.util.*;
 
 public class SlangWord {
     private TreeMap<String, Set<String>> slangWords;
-
+    private static SlangWord instance = null;
     public SlangWord() {
         this.slangWords = new TreeMap<String, Set<String>>();
+    }
+
+    public static SlangWord getInstance() {
+        if (instance == null) {
+            instance = new SlangWord();
+        }
+        return instance;
     }
 
     public void addSlangWord(String slang, Set<String> definitions) {
