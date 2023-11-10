@@ -29,7 +29,11 @@ public class DeleteAlert {
 
     @FXML public void confirm(){
         confirm_btn.setOnAction(actionEvent -> {
-
+            SlangWord slangWord = SlangWord.getInstance();
+            DataHolder dataHolder = DataHolder.getInstance();
+            System.out.println(dataHolder.getSlangWord());
+            slangWord.deleteSlangWord(dataHolder.getSlangWord());
+            slangWord.writeSlangtoFile();
         });
     }
 }

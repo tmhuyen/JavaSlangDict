@@ -34,12 +34,12 @@
             <Font size="24.0" />
          </font>
       </Button>
-      <Button layoutX="715.0" layoutY="184.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="110.0" text="Search">
+      <Button fx:id="search_btn" layoutX="715.0" layoutY="184.0" mnemonicParsing="false" onAction="#search" prefHeight="51.0" prefWidth="110.0" text="Search">
          <font>
             <Font size="24.0" />
          </font>
       </Button>
-      <TextArea layoutX="116.0" layoutY="183.0" prefHeight="53.0" prefWidth="575.0" promptText="New slang word" wrapText="true" />
-      <TextFlow layoutX="116.0" layoutY="254.0" prefHeight="154.0" prefWidth="709.0" />
+      <TextFlow fx:id="def_textflow" layoutX="116.0" layoutY="254.0" prefHeight="154.0" prefWidth="709.0" />
+      <TextField fx:id="sw_textfield" layoutX="118.0" layoutY="190.0" prefHeight="39.0" prefWidth="579.0" />
    </children>
 </AnchorPane>

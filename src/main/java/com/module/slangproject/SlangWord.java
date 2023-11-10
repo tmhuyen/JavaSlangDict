@@ -85,6 +85,12 @@ public class SlangWord {
         }
     }
 
+    public void deleteSlangWord(String key){
+        if (slangWords.containsKey(key)){
+            slangWords.remove(key);
+            System.out.println("Deleted!");
+        }
+    }
     public void printFirstTwenty() {
         int count = 0;
         for (Map.Entry<String, Set<String>> entry : this.slangWords.entrySet()) {
