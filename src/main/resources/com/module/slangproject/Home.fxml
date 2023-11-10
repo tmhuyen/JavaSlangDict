@@ -20,27 +20,27 @@
             <Font name="System Bold" size="64.0" />
          </font>
       </Label>
-      <Button fx:id="button_add" alignment="TOP_LEFT" layoutX="64.0" layoutY="318.0" mnemonicParsing="false" onAction="#switchToAdd" text="Add new slang word">
+      <Button alignment="TOP_LEFT" layoutX="64.0" layoutY="318.0" mnemonicParsing="false" onAction="#switchToAdd" text="Add new slang word">
          <font>
             <Font size="24.0" />
          </font>
       </Button>
-      <Button layoutX="64.0" layoutY="242.0" mnemonicParsing="false" text="Search definitions">
+      <Button layoutX="64.0" layoutY="242.0" mnemonicParsing="false" onAction="#switchToSearchDef" text="Search definitions">
          <font>
             <Font size="24.0" />
          </font>
       </Button>
-      <Button layoutX="735.0" layoutY="318.0" mnemonicParsing="false" text="View history">
+      <Button layoutX="735.0" layoutY="318.0" mnemonicParsing="false" onAction="#switchToHistory" text="View history">
          <font>
             <Font size="24.0" />
          </font>
       </Button>
-      <Button layoutX="64.0" layoutY="165.0" mnemonicParsing="false" text="Search slang words">
+      <Button layoutX="64.0" layoutY="165.0" mnemonicParsing="false" onAction="#switchToSearchSW" text="Search slang words">
          <font>
             <Font size="24.0" />
          </font>
       </Button>
-      <Button alignment="TOP_LEFT" layoutX="404.0" layoutY="165.0" mnemonicParsing="false" text="Edit a slang word">
+      <Button alignment="TOP_LEFT" layoutX="404.0" layoutY="165.0" mnemonicParsing="false" onAction="#switchToEdit" text="Edit a slang word">
          <font>
             <Font size="24.0" />
          </font>
@@ -50,22 +50,22 @@
             <Font size="24.0" />
          </font>
       </Button>
-      <Button alignment="TOP_LEFT" layoutX="390.0" layoutY="318.0" mnemonicParsing="false" text="Update raw data list">
+      <Button alignment="TOP_LEFT" layoutX="390.0" layoutY="318.0" mnemonicParsing="false" onAction="#switchToUpdate" text="Update raw data list">
          <font>
             <Font size="24.0" />
          </font>
       </Button>
-      <Button alignment="TOP_LEFT" layoutX="381.0" layoutY="393.0" mnemonicParsing="false" text="Random a slang word">
+      <Button alignment="TOP_LEFT" layoutX="381.0" layoutY="393.0" mnemonicParsing="false" onAction="#switchToRandom" text="Random a slang word">
          <font>
             <Font size="24.0" />
          </font>
       </Button>
-      <Button layoutX="699.0" layoutY="242.0" mnemonicParsing="false" text="Definitions quiz">
+      <Button layoutX="699.0" layoutY="242.0" mnemonicParsing="false" onAction="#switchToDefQuiz" text="Definitions quiz">
          <font>
             <Font size="24.0" />
          </font>
       </Button>
-      <Button layoutX="683.0" layoutY="165.0" mnemonicParsing="false" text="Slang words quiz">
+      <Button layoutX="683.0" layoutY="165.0" mnemonicParsing="false" onAction="#switchToSWQuiz" text="Slang words quiz">
          <font>
             <Font size="24.0" />
          </font>

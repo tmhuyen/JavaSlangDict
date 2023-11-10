@@ -7,10 +7,9 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
 <AnchorPane prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.module.slangproject.SWQuiz">
    <children>
-      <Button layoutX="444.0" layoutY="415.0" mnemonicParsing="false" text="Submit">
+      <Button layoutX="589.0" layoutY="415.0" mnemonicParsing="false" text="Submit">
          <font>
             <Font size="24.0" />
          </font>
@@ -54,5 +53,10 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
+      <Button layoutX="298.0" layoutY="415.0" mnemonicParsing="false" onAction="#switchToHome" text="Back to home ">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

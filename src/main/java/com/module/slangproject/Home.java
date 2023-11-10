@@ -52,4 +52,43 @@ public class Home{
         stage.setScene(scene);
         stage.show();
     }
+    public void switchToDefQuiz(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("DefQuiz.fxml"));
+        stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void switchToSWQuiz(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("SWQuiz.fxml"));
+        stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void switchToRandom(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("Random.fxml"));
+        stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void switchToUpdate(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("Update.fxml"));
+        stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+    public void switchToHistory(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("History.fxml"));
+        stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
 }

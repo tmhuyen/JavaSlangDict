@@ -7,7 +7,6 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
 <AnchorPane prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.module.slangproject.DeleteAlert">
    <children>
       <Text layoutX="59.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm deletion" textAlignment="CENTER">
@@ -20,7 +19,7 @@
             <Font size="26.0" />
          </font>
       </Text>
-      <Button cancelButton="true" layoutX="106.0" layoutY="216.0" mnemonicParsing="false" text="Close">
+      <Button cancelButton="true" layoutX="106.0" layoutY="216.0" mnemonicParsing="false" onAction="#switchToDelete" text="Close">
          <font>
             <Font size="24.0" />
          </font>

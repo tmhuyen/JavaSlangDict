@@ -13,8 +13,8 @@ public class DeleteAlert {
     private Stage stage;
     private Scene scene;
     private Parent parent;
-    public void switchToHome(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Home.fxml"));
+    public void switchToDelete(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("Delete.fxml"));
         stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);

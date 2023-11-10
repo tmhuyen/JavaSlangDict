@@ -7,7 +7,6 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
 <AnchorPane prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.module.slangproject.SearchDef">
    <children>
       <Label alignment="CENTER" layoutX="172.0" layoutY="107.0" text="Search the slang words by meanings" textFill="#427d9d">
@@ -31,7 +30,7 @@
          </font>
       </Button>
       <TextArea layoutX="126.0" layoutY="173.0" prefHeight="53.0" prefWidth="575.0" promptText="New slang word" wrapText="true" />
-      <Button layoutX="390.0" layoutY="431.0" mnemonicParsing="false" text="Back to Home">
+      <Button layoutX="390.0" layoutY="431.0" mnemonicParsing="false" onAction="#switchToHome" text="Back to Home">
          <font>
             <Font size="24.0" />
          </font>
