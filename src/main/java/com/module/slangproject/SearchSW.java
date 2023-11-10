@@ -49,7 +49,6 @@ public class SearchSW {
                 Set<String> def_set = slangWord.getDefinitions(sw);
                 for (String element:def_set) {
                     Text text = new Text(element + "\n");
-
                     // Add the Text node to the TextFlow
                     def_textflow.getChildren().add(text);
                 }

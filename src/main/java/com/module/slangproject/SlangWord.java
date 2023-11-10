@@ -1,5 +1,6 @@
 package com.module.slangproject;
 import java.io.IOException;
+import java.io.FileWriter;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.*;
@@ -43,6 +44,20 @@ public class SlangWord {
             e.printStackTrace();
         }
 
+    }
+    public void writeSlangtoFile() {
+        String filename = "src/main/data/slang_newdata.txt";
+        TreeMap<String,Set<String>> slangMap = this.slangWords;
+        try (FileWriter writer = new FileWriter(filename)) {
+            for (Map.Entry<String, Set<String>> entry : slangMap.entrySet()) {
+                String key = entry.getKey();
+                Set<String> values = entry.getValue();
+                String valueString = String.join("|", values);
+                writer.write(key + "`" + valueString + "\n");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public boolean isWordExist(String slang) {
