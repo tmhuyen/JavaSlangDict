@@ -148,7 +148,7 @@ $_$`Has money
 :(`Unhappy|sad
 :(:)`Pig
 :(|)`Monkey
-:)`Happy|Ahihihihi
+:)`Happy
 :*`Kiss
 :-(`Sad
 :-)`Smile

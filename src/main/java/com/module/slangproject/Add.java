@@ -42,6 +42,7 @@ public class Add {
             SlangWord slangWord = SlangWord.getInstance();
             if (slangWord.isWordExist(newslang) == false) {
                 slangWord.addSlangWord(newslang,defs);
+                slangWord.writeSlangtoFile();
             }
             else {
                 DataHolder.getInstance().setData(newslang,defs);

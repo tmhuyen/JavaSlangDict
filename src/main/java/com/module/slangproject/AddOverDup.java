@@ -19,7 +19,12 @@ public class AddOverDup {
     }
     @FXML public void overwrite(){
         overwrite_btn.setOnAction(actionEvent -> {
-
+            SlangWord slangWord = SlangWord.getInstance();
+            DataHolder dataHolder = DataHolder.getInstance();
+            System.out.println(dataHolder.getSlangWord());
+            System.out.println(dataHolder.getDefinitions());
+            slangWord.overwriteValue(dataHolder.getSlangWord(), dataHolder.getDefinitions());
+            slangWord.writeSlangtoFile();
         });
     }
 
@@ -28,6 +33,7 @@ public class AddOverDup {
             SlangWord slangWord = SlangWord.getInstance();
             DataHolder dataHolder = DataHolder.getInstance();
             slangWord.addSlangWord(dataHolder.getSlangWord(), dataHolder.getDefinitions());
+            slangWord.writeSlangtoFile();
         });
     }
 }
