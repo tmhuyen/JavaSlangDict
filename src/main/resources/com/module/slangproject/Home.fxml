@@ -25,7 +25,7 @@
             <Font size="24.0" />
          </font>
       </Button>
-      <Button layoutX="64.0" layoutY="242.0" mnemonicParsing="false" onAction="#switchToSearchDef" text="Search definitions">
+      <Button layoutX="64.0" layoutY="242.0" mnemonicParsing="false" onAction="#switchToSearchDef" text="Search by definitions">
          <font>
             <Font size="24.0" />
          </font>
@@ -35,7 +35,7 @@
             <Font size="24.0" />
          </font>
       </Button>
-      <Button layoutX="64.0" layoutY="165.0" mnemonicParsing="false" onAction="#switchToSearchSW" text="Search slang words">
+      <Button layoutX="64.0" layoutY="165.0" mnemonicParsing="false" onAction="#switchToSearchSW" text="Search by slang words">
          <font>
             <Font size="24.0" />
          </font>
@@ -50,7 +50,7 @@
             <Font size="24.0" />
          </font>
       </Button>
-      <Button alignment="TOP_LEFT" layoutX="390.0" layoutY="318.0" mnemonicParsing="false" onAction="#switchToUpdate" text="Update raw data list">
+      <Button alignment="TOP_LEFT" layoutX="390.0" layoutY="318.0" mnemonicParsing="false" onAction="#overlayUpdate" text="Update raw data list">
          <font>
             <Font size="24.0" />
          </font>

@@ -15,7 +15,7 @@
             <Font size="24.0" />
          </font>
       </Button>
-      <Button cancelButton="true" layoutX="72.0" layoutY="214.0" mnemonicParsing="false" onAction="#switchtoHome" text="Back to home">
+      <Button cancelButton="true" layoutX="72.0" layoutY="214.0" mnemonicParsing="false" onAction="#switchToHome" text="Back to home">
          <font>
             <Font size="24.0" />
          </font>

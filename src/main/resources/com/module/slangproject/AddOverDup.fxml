@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.module.slangproject.AddOverDup">
+   <children>
+      <Text layoutX="75.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select a feature" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Text>
+      <Button fx:id="close_btn" cancelButton="true" layoutX="205.0" layoutY="213.0" mnemonicParsing="false" onAction="#close" text="Close">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="duplicate_btn" layoutX="292.0" layoutY="125.0" mnemonicParsing="false" onAction="#duplicate" text="Duplicate" textFill="RED">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="overwrite_btn" layoutX="75.0" layoutY="125.0" mnemonicParsing="false" onAction="#overwrite" text="Overwrite" textFill="RED">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

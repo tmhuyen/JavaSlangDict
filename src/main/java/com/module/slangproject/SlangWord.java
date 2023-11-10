@@ -62,6 +62,14 @@ public class SlangWord {
         return result;
     }
 
+    public void overwriteValue(String key, Set<String> newValue) {
+        if (slangWords.containsKey(key)) {
+            slangWords.put(key, newValue);
+        } else {
+            System.out.println("Key not found in the TreeMap.");
+        }
+    }
+
     public void printFirstTwenty() {
         int count = 0;
         for (Map.Entry<String, Set<String>> entry : this.slangWords.entrySet()) {

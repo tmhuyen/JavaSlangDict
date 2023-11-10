@@ -35,12 +35,27 @@ public class Add {
         return resultSet;
     }
     @FXML public void readata(){
-        AtomicReference<String> s = null;
         add_addbtn.setOnAction(actionEvent -> {
             String newslang = add_txtnewslang.getText();
             String newdef = add_txtdef.getText();
+            Set<String> defs = splitString(newdef);
             SlangWord slangWord = SlangWord.getInstance();
-
+            if (slangWord.isWordExist(newslang) == false) {
+                slangWord.addSlangWord(newslang,defs);
+            }
+            else {
+                DataHolder.getInstance().setData(newslang,defs);
+                try {
+                    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("AddOverDup.fxml"));
+                    Parent root = (Parent) fxmlLoader.load();
+                    Scene scene = new Scene(root);
+                    Stage stage = new Stage();
+                    stage.setScene(scene);
+                    stage.show();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
         });
     }
 

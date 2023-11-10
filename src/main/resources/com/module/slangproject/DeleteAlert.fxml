@@ -19,12 +19,12 @@
             <Font size="26.0" />
          </font>
       </Text>
-      <Button cancelButton="true" layoutX="106.0" layoutY="216.0" mnemonicParsing="false" onAction="#switchToDelete" text="Close">
+      <Button fx:id="close_btn" cancelButton="true" layoutX="106.0" layoutY="216.0" mnemonicParsing="false" onAction="#close" text="Close">
          <font>
             <Font size="24.0" />
          </font>
       </Button>
-      <Button layoutX="277.0" layoutY="216.0" mnemonicParsing="false" text="Confirm" textFill="RED">
+      <Button fx:id="confirm_btn" layoutX="277.0" layoutY="216.0" mnemonicParsing="false" onAction="#confirm" text="Confirm" textFill="RED">
          <font>
             <Font size="24.0" />
          </font>

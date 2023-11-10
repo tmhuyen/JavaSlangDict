@@ -76,12 +76,17 @@ public class Home{
         stage.show();
     }
 
-    public void switchToUpdate(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Update.fxml"));
-        stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+    public void overlayUpdate(ActionEvent event) throws IOException {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Update.fxml"));
+            Parent root = (Parent) fxmlLoader.load();
+            Scene scene = new Scene(root);
+            Stage stage = new Stage();
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
     public void switchToHistory(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("History.fxml"));
