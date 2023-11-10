@@ -1,6 +1,7 @@
 package com.module.slangproject;
 import java.io.IOException;
 import java.io.FileWriter;
+import java.util.Random;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.*;
@@ -90,6 +91,17 @@ public class SlangWord {
             slangWords.remove(key);
             System.out.println("Deleted!");
         }
+    }
+
+    public String getRandomSlang(){
+        int size = slangWords.size();
+        int item = new Random().nextInt(size);
+        int i = 0;
+        for (Map.Entry<String, Set<String>> entry : this.slangWords.entrySet()){
+            if (i == item) return entry.getKey();
+            else i++;
+        }
+        return null;
     }
     public void printFirstTwenty() {
         int count = 0;
