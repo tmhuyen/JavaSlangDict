@@ -7,11 +7,14 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.text.Text;
+import javafx.scene.text.TextFlow;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
-public class Update {
+public class History {
     private Stage stage;
     private Scene scene;
     private Parent parent;
@@ -22,22 +25,18 @@ public class Update {
         stage.setScene(scene);
         stage.show();
     }
-
     @FXML
-    Button confirm_btn = new Button();
+    Button view_btn = new Button();
     @FXML
-    Button close_btn = new Button();
-    @FXML public void close(){
-        close_btn.setOnAction(actionEvent -> {
-            Stage stage = (Stage) close_btn.getScene().getWindow();
-            // Close the stage
-            stage.close();
-        });
-    }
+    TextFlow history_textflow = new TextFlow();
     @FXML
-    public void update(){
-        SlangWord slangWord = SlangWord.getInstance();
-        slangWord.loadSlangWordsFromFile("./src/main/data/slang_raw.txt");
-        System.out.println("Updated!");
+    public void view(){
+        history_textflow.getChildren().clear();
+        DataHistory dataHistory = DataHistory.getInstance();
+        ArrayList<String> his = dataHistory.getHistory();
+        for (String str : his){
+            Text text = new Text(str + "\n");
+            history_textflow.getChildren().add(text);
+        }
     }
 }

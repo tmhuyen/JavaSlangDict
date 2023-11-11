@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.module.slangproject.Add">
+   <children>
+      <Label alignment="CENTER" layoutX="281.0" layoutY="499.0" text="HCMUS - Building Java Application - 21127202" textFill="#427d9d">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="232.0" layoutY="14.0" text="Slang Dictionary" textFill="#164863">
+         <font>
+            <Font name="System Bold" size="64.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="293.0" layoutY="107.0" text="Add a new slang word" textFill="#427d9d">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="232.0" layoutY="428.0" mnemonicParsing="false" onAction="#switchToHome" text="Back to Home">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="add_addbtn" layoutX="541.0" layoutY="428.0" mnemonicParsing="false" onAction="#readata" text="Add new word">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="add_txtdef" layoutX="118.0" layoutY="262.0" prefHeight="137.0" prefWidth="709.0" promptText="Definitions of the slang word" wrapText="true" />
+      <TextArea fx:id="add_txtnewslang" layoutX="118.0" layoutY="180.0" prefHeight="53.0" prefWidth="709.0" promptText="New slang word" wrapText="true" />
+   </children>
+</AnchorPane>

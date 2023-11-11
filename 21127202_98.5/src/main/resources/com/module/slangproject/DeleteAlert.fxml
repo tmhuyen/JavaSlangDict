@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.module.slangproject.DeleteAlert">
+   <children>
+      <Text layoutX="59.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm deletion" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Text>
+      <Text layoutX="106.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Are you sure you want to delete this slang word?" textAlignment="CENTER" wrappingWidth="288.1484375">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <Button fx:id="close_btn" cancelButton="true" layoutX="106.0" layoutY="216.0" mnemonicParsing="false" onAction="#close" text="Close">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="confirm_btn" layoutX="277.0" layoutY="216.0" mnemonicParsing="false" onAction="#confirm" text="Confirm" textFill="RED">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

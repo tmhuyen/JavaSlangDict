@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.module.slangproject.Delete">
+   <children>
+      <Button fx:id="button_delete" layoutX="504.0" layoutY="428.0" mnemonicParsing="false" onAction="#overlayAlert" text="Delete slang word">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="281.0" layoutY="499.0" text="HCMUS - Building Java Application - 21127202" textFill="#427d9d">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="223.0" layoutY="14.0" text="Slang Dictionary" textFill="#164863">
+         <font>
+            <Font name="System Bold" size="64.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="313.0" layoutY="107.0" text="Delete a slang word" textFill="#427d9d">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="232.0" layoutY="428.0" mnemonicParsing="false" onAction="#switchToHome" text="Back to Home">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="search_btn" layoutX="715.0" layoutY="184.0" mnemonicParsing="false" onAction="#search" prefHeight="51.0" prefWidth="110.0" text="Search">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <TextFlow fx:id="def_textflow" layoutX="116.0" layoutY="254.0" prefHeight="154.0" prefWidth="709.0" />
+      <TextField fx:id="sw_textfield" layoutX="118.0" layoutY="190.0" prefHeight="39.0" prefWidth="579.0" />
+   </children>
+</AnchorPane>

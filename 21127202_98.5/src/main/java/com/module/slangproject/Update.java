@@ -37,7 +37,7 @@ public class Update {
     @FXML
     public void update(){
         SlangWord slangWord = SlangWord.getInstance();
-        slangWord.loadSlangWordsFromFile("./src/main/data/slang_raw.txt");
+        slangWord.loadSlangWordsFromFile("src/main/data/slang_raw.txt");
         System.out.println("Updated!");
     }
 }

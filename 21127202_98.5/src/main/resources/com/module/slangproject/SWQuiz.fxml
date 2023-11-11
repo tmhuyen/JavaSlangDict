@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.module.slangproject.SWQuiz">
+   <children>
+      <Button fx:id="submit_btn" layoutX="643.0" layoutY="415.0" mnemonicParsing="false" onAction="#check" text="Submit">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <RadioButton fx:id="radio04" layoutX="481.0" layoutY="344.0" mnemonicParsing="false" text="Choice 4">
+         <toggleGroup>
+            <ToggleGroup fx:id="slangword" />
+         </toggleGroup>
+         <font>
+            <Font size="24.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radio03" layoutX="480.0" layoutY="293.0" mnemonicParsing="false" text="Choice 3" toggleGroup="$slangword">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radio02" layoutX="480.0" layoutY="244.0" mnemonicParsing="false" text="Choice 2" toggleGroup="$slangword">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radio01" layoutX="480.0" layoutY="194.0" mnemonicParsing="false" text="Choice 1" toggleGroup="$slangword">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </RadioButton>
+      <TextFlow fx:id="question_textflow" layoutX="79.0" layoutY="173.0" prefHeight="212.0" prefWidth="374.0" />
+      <Label alignment="CENTER" layoutX="336.0" layoutY="107.0" text="Slang words quiz" textFill="#427d9d">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="232.0" layoutY="14.0" text="Slang Dictionary" textFill="#164863">
+         <font>
+            <Font name="System Bold" size="64.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="298.0" layoutY="493.0" text="HCMUS - Building Java Application - 21127202" textFill="#427d9d">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="115.0" layoutY="415.0" mnemonicParsing="false" onAction="#switchToHome" text="Back to home ">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="get_btn" layoutX="372.0" layoutY="415.0" mnemonicParsing="false" onAction="#getnew" text="Get new question">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

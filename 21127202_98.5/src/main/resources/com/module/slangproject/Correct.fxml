@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.module.slangproject.NotiController">
+   <children>
+      <Label layoutX="85.0" layoutY="80.0" text="Correct answer!" textFill="#03ab00">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Button fx:id="close_btn" layoutX="205.0" layoutY="206.0" mnemonicParsing="false" onAction="#close" text="Close">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
