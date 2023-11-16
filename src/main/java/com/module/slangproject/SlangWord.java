@@ -48,7 +48,7 @@ public class SlangWord {
 
     }
     public void writeSlangtoFile() {
-        String filename = "../src/main/data/slang_newdata.txt";
+        String filename = "data/slang_newdata.txt";
         TreeMap<String,Set<String>> slangMap = this.slangWords;
         try (FileWriter writer = new FileWriter(filename)) {
             for (Map.Entry<String, Set<String>> entry : slangMap.entrySet()) {
