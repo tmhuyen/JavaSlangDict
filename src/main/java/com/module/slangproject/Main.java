@@ -27,6 +27,6 @@ public class Main extends Application {
         stage.setScene(scene);
         stage.show();
         SlangWord slangWord = SlangWord.getInstance();
-        slangWord.loadSlangWordsFromFile("./src/main/data/slang_raw.txt");
+        slangWord.loadSlangWordsFromFile("../src/main/data/slang_raw.txt");
     }
 }

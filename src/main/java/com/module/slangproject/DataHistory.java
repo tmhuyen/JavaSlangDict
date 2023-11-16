@@ -43,7 +43,7 @@ public class DataHistory {
         this.history.add(s);
     }
     public void writeToFile() {
-        try (FileWriter writer = new FileWriter("./src/main/data/history.txt")) {
+        try (FileWriter writer = new FileWriter("../src/main/data/history.txt")) {
             for (String str : this.history) {
                 writer.write(str + "\n");
             }
